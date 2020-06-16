@@ -1,0 +1,11 @@
+fileName=$1
+
+parkingLotParentDir=/home/narendra/Downloads
+
+if [ -z "$1" ] ; then
+        java -jar $parkingLotParentDir/parking_lot/target/parkinglot-1.0-SNAPSHOT.jar
+        exit 1
+else
+	java -jar $parkingLotParentDir/parking_lot/target/parkinglot-1.0-SNAPSHOT.jar $fileName
+
+fi
